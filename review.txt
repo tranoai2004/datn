@@ -1,0 +1,72 @@
+chạy composer update
+
+copy nội dung file .env.example
+
+tạo file .env mới
+
+chạy lệnh php artisan key:generate
+
+đổi tên name database
+
+composer require spatie/laravel-permission
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+composer require laravel/socialite
+composer require maatwebsite/excel
+composer require phpoffice/phpspreadsheet
+
+
+chạy migrate
+
+php artisan db:seed --class=RolesAndPermissionsSeeder
+php artisan db:seed --class=UsersTableSeeder
+php artisan db:seed --class=PaymentMethodsTableSeeder
+php artisan db:seed --class=PromotionsTableSeeder
+php artisan db:seed --class=OrdersTableSeeder
+php artisan db:seed --class=BrandsTableSeeder
+php artisan db:seed --class=CataloguesTableSeeder
+php artisan db:seed --class=ProductsTableSeeder
+php artisan db:seed --class=AttributesTableSeeder
+php artisan db:seed --class=AttributeValueTableSeeder
+php artisan db:seed --class=ProductVariantsTableSeeder
+php artisan db:seed --class=ProductVariantAttributesTableSeeder
+php artisan db:seed --class=OrderItemTableSeeder
+php artisan db:seed --class=CategoriesTableSeeder
+php artisan db:seed --class=PostSeeder
+php artisan db:seed --class=CommentSeeder
+php artisan db:seed --class=BannerSeeder
+php artisan db:seed --class=ContactSeeder
+
+
+chạy full seeder
+php artisan db:seed
+
+
+php artisan migrate:refresh
+
+
+
+Zaia Enterprise
+
+
+Đăng nhập admin
++ mail: john.doe@example.com  pass: password123
+
+
+
+hello
+#git
+git branch -a
+git checkout tên
+git pull
+git pull origin main
+git add .
+git status
+git commit -m "nd"
+git pull
+git pull origin main
+git push
+
+
+
+php artisan config:cache
+php artisan cache:clea
